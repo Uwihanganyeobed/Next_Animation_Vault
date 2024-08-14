@@ -12,6 +12,7 @@ async function Home() {
         {data}
       </section>
       <LoadMore />
+      
     </main>
   );
 }
