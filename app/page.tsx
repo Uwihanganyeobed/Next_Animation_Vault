@@ -1,6 +1,7 @@
 import AnimeCard, { AnimeProp } from "@/components/AnimeCard";
 import LoadMore from "../components/LoadMore";
 import { fetchAnime } from "./action";
+import Chatbot from "@/components/ChatBot";
 
 async function Home() {
   const data = await fetchAnime(1);
@@ -12,7 +13,6 @@ async function Home() {
         {data}
       </section>
       <LoadMore />
-      
     </main>
   );
 }
